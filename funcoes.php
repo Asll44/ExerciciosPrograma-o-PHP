@@ -72,7 +72,16 @@
             echo $n10;
         }
     } 
-    
+    //exercicio 11
+    function fatorialNumero($num){
+        if ($num < 0)
+        return "Fatorial não definido para número negativo";
+        $fatorial = 1;
+        for ($i = $num; $i >= 1; $i--){
+            return $fatorial;
+        }
+    }
+
     //exercicio 12
     function diaDaSemana($num){
         switch($num){
@@ -102,6 +111,38 @@
                 break;
         }//fim do switch
     }
+
+    //exercicio 13
+    function codigoProduto($num){
+        switch($num){
+            case 1:
+                return "1 - Pão de Queijo R$ 10,00";
+                break;
+            case 2:
+                return "2 - Caderno Argola R$ 15,00";
+                break;
+            case 3:
+                return "3 - Queijo Qualho R$ 25,00";
+                break;
+            case 4:
+                return "4 - Robux R$ 50,00";
+                break;
+            case 5:
+                return "5 - Batata Doce R$ 5,00";
+                break;
+            default:
+                return "O número informado é invalido !";
+                break;
+        }
+    }
+
+    //exercicio 15
+    function somaNumeros($num){
+
+    }
+
+
+
 
 
 
