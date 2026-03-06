@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 15</title>
+    <title>Exercicio 22</title>
 </head>
 <body>
     <?php include('funcoes.php');  ?>
-    <h1> Exercicio 15 </h1>
+    <h1> Exercicio 22 </h1>
     <br>
-    <h1> Calcule a soma dos números de 1 a N </h1>
-    <br>
+    <h1> 15 primeiros termos da sequência de Fibornacci </h1>
     <form method="POST"> 
-        <label> Digite um Código: </label>
-        <input type="number" name = "num" id = "num" />
-        <br>
         <button type = "submit" > Verificar
             <?php
-                $num = $_POST['num'];
-                $resultado = somaNumeros($num);
+                $n1= $_POST['$n1'];
+                $n2 = $_POST['$n2'];
+                $resultado = fibonacci($n1,$n2);
             ?>
         </button>
         <h1>

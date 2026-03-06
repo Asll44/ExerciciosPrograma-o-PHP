@@ -138,12 +138,111 @@
 
     //exercicio 15
     function somaNumeros($num){
-
+        return ($num * ($num + 1)) / 2;{
+            echo somaNumeros(10);
+        }
     }
 
+    //exercicio 18
+    function horasTrabalhadas($horas,$valor){
+        $calculo = (int)$valor * (int)$horas;
+        if($calculo >= 40){
+            $calculo1 = $calculo * 1.5;
+            return "O seu salário é de $calculo1";
+        }else{
+            return "O seu salário é de $calculo";
+        }
+    }
 
+    //exercicio 20
+    function mediaNota($n1,$n2,$n3){
+        $media = ($n1+$n2+$n3)/3;
+        if($media >= 7){
+            return "Você foi aprovado !";
+        }else{
+            return "Você foi reprovado";
+        }
+    }
 
+    //exercicio 22
+    function fibonacci($n1,$n2){
+        $n1 = 0;
+        $n2 = 1;
 
+        for ($i = 0; $i < 15; $i++){
+            echo  $n1 . " ";
+        }
+        $proximo =  $n1 + $n2;
+        $n1 = $n2;
+        $n2 = $proximo;
+    }
+
+    
+    //exercicio 23
+    function numeros($n1,$n2,$n3,$n4,$n5,$n6,$n7,$n8,$n9,$n10,$n11,$n12,$n13,$n14,$n15){ 
+        echo "Os números negativos são: ";
+        if($n1 < 0){
+            echo $n1;
+        }else if($n2 < 0){
+            echo $n2;
+        }else if($n3 < 0){
+            echo $n3;
+        }else if($n4 < 0){
+            echo $n4;
+        }else if($n5 < 0){ 
+            echo $n5;
+        }else if($n6 < 0){
+            echo $n6;
+        }else if($n7 < 0){
+            echo $n7;
+        }else if($n8 < 0){
+            echo $n8;
+        }else if($n9 < 0){
+            echo $n9;
+        }else if($n10 < 0){
+            echo $n10;
+        }else if($n11 < 0){
+            echo $n11;
+        }else if($n12 < 0){
+            echo $n12;
+        }else if($n13 < 0){
+            echo $n13;
+        }else if($n14 < 0){
+            echo $n14;
+        }else if($n15 < 0){
+            echo $n15; 
+        }
+    }
+
+    //exercicio 24
+    function imc($peso,$altura){
+        $calculo = $peso/($altura * $altura);
+        if( $calculo < 18.5){
+            return "Abaixo do peso";
+        }else if( $calculo > 18.5 && $calculo < 24.9){
+            return "Peso Normal";
+        }else if( $calculo > 25.0 && $calculo < 29.9){
+            return "Sobrepeso";
+        }else if( $calculo > 30.0 && $calculo < 39.9){
+            return "Obesidade";
+        }else{
+            return "Obesidade grave";
+        }
+    }
+
+    //exercicio 25
+    function multiplos($i){
+        for ($j = 1; $j <= 50; $j++){
+            if($j % 4 == 0){
+                echo $j . "<br>";
+            }
+        }
+    }
+
+    //exercicio 27
+    function nomes(nomes$n1,$n2,$n3,$n4,$n5,$n6,$n7,$n8,$n9,$n10){
+
+    }
 
 
 ?>
